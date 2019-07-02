@@ -1,0 +1,23 @@
+<!--pages/showvip/showvip.wxml-->
+<!--pages/show/show.wxml-->
+<view class="contarner">
+    <view class="content">
+        <view class="title flex-def flex-cCenter flex-zBetween">
+            <view>用户列表(<text>{{infor.length}}</text>)人</view>
+        </view>
+        <view class="{{iconStatu?'margin-b':''}}">
+            <view class="item flex-def flex-cCenter flex-zBetween" wx:for="{{infor}}" wx:key="{{index}}" data-id='{{item.id}}'>
+                <view class="flex-def flex-cCenter flex-zBetween" data-id='{{item.id}}'>
+                    <icon wx:if="{{iconStatu}}" type="success" size="20" color="{{item.selStatu?'#0f0':'#999'}}" data-id='{{item.id}}' />
+                    <view data-id='{{item.id}}'>
+                        <text data-id='{{item.id}}'>用户名：{{item.username}}</text>
+                        <text data-id='{{item.id}}'>密码：{{item.password}}</text>
+                    </view>
+                </view>
+                <view data-id='{{item.id}}'>
+                    <text class="wrongText" data-id='{{item.id}}'>{{item.status}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

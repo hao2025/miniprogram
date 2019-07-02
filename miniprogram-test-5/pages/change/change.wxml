@@ -1,0 +1,34 @@
+<!--pages/change/change.wxml-->
+<view class="loginBox">
+     <view class='loginbox'>
+       <view class='upstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/name.png' style='display:inline' mode="aspectFit"></image>
+         </view>
+         <input class='input' name="userName" placeholder-style='font-size:12px' placeholder='请输入账户' bindinput ="userNameInput"></input>
+       </view>
+       <view class='downstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/fkey.png' style='display:inline' mode="aspectFit"></image>
+          </view>
+         <input class='input' name="fpassWord" placeholder-style='font-size:12px' placeholder='请输入旧密码' bindinput="fpassWordInput"></input>      
+       </view>
+       <view class='downstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/nkey.png' style='display:inline' mode="aspectFit"></image>
+          </view>
+         <input class='input' name="npassWord" placeholder-style='font-size:12px' placeholder='请输入新密码' bindinput="npassWordInput"></input>      
+       </view>
+       <view class='downstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/rekey.png' style='display:inline' mode="aspectFit"></image>
+          </view>
+         <input class='input' name="repassWord" placeholder-style='font-size:12px' placeholder='请重复新密码' bindinput="repassWordInput"></input>      
+       </view>    
+     </view>
+  </view>
+<view>
+    <view class="viewName" style="background-color:white">
+          <button class="loginBtn" bindtap="sureBtnClick" style="background-color:green">确认</button>
+        </view>
+</view>

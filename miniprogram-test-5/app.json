@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/choice/choice",
+    "pages/register/register",
+    "pages/login/login",
+    "pages/mregister/mregister",
+    "pages/manage/manage",
+    "pages/change/change",
+    "pages/show/show",
+    "pages/showvip/showvip",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/show/show",
+        "text": "普通会员",
+        "iconPath": "photo/list.png",
+        "selectedIconPath": "photo/listact.png"
+      },
+      {
+        "pagePath": "pages/showvip/showvip",
+        "text": "vip会员",
+        "iconPath": "photo/vip.png",
+        "selectedIconPath": "photo/vipact.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "photo/manager.png",
+        "selectedIconPath": "photo/manageract.png"
+      }
+    ]
+  }
+}

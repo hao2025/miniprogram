@@ -1,0 +1,5 @@
+<!--pages/choice/choice.wxml-->
+<view>
+  <button bindtap='pregister'>注册界面</button>
+  <button bindtap='plogin'>登陆界面</button>
+</view>

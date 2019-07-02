@@ -1,0 +1,34 @@
+<!--pages/mregister/mregister.wxml-->
+<view class="loginBox">
+     <view class='loginbox'>
+       <view class='upstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/name.png' style='display:inline' mode="aspectFit"></image>
+         </view>
+         <input class='input' name="userName" placeholder-style='font-size:12px' placeholder='请输入4~5位的字符或数字' bindinput ="userNameInput"></input>
+       </view>
+       <view class='downstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/key.png' style='display:inline' mode="aspectFit"></image>
+          </view>
+         <input class='input' name="passWord" placeholder-style='font-size:12px' placeholder='请输入密码' bindinput="passWordInput"></input>      
+       </view>
+       <view class='downstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/rekey.png' style='display:inline' mode="aspectFit"></image>
+          </view>
+         <input class='input' name="repassWord" placeholder-style='font-size:12px' placeholder='请重复密码' bindinput="repassWordInput"></input>      
+       </view>
+       <view class='downstyle'>
+         <view class='imagestyle'>
+            <image src='../../photo/skey.png' style='display:inline' mode="aspectFit"></image>
+          </view>
+         <input class='input' name="secretKey" placeholder-style='font-size:12px' placeholder='请输入密匙' bindinput="secretKeyInput"></input>      
+       </view>    
+     </view>
+  </view>
+<view>
+    <view class="viewName" style="background-color:white">
+          <button class="loginBtn" bindtap="registerBtnClick" style="background-color:green">注册</button>
+        </view>
+</view>
