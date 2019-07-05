@@ -1,0 +1,21 @@
+<!--pages/system/system.wxml-->
+<view>
+  <view class="itemView">
+      <input class="input" name="userName" placeholder="请输入用户名"
+      bindinput ="userNameInput"/>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="loginBtn" bindtap="searchBtnClick" style="background-color:blue">查询</button>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="loginBtn" bindtap="upBtnClick" style="background-color:green">升级</button>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="loginBtn" bindtap="deleteBtnClick" style="background-color:red">删除</button>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="exitthis" bindtap="exitBtnClick">退出</button>
+  </view>
+</view>
+
+

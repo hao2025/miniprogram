@@ -1,0 +1,23 @@
+<!--pages/show/show.wxml-->
+<view class="contarner">
+    <view class="content">
+        <view class="title flex-def flex-cCenter flex-zBetween">
+            <view>用户列表(<text>{{infor.length}}</text>)人</view>
+        </view>
+        <view class="{{iconStatu?'margin-b':''}}">
+            <view class="item flex-def flex-cCenter flex-zBetween" wx:for="{{infor}}" wx:key="{{index}}">
+                <view class="flex-def flex-cCenter flex-zBetween">
+                    <icon wx:if="{{iconStatu}}" type="success" size="20" color="{{item.selStatu?'#0f0':'#999'}}"/>
+                    <view>
+                        <text>用户名：{{item.username}}</text>
+                        <text>密码：{{item.password}}</text>
+                    </view>
+                </view>
+                <view data-id='{{item.id}}'>
+                    <text class="wrongCount"></text>
+                    <text class="wrongText">{{item.status}}</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

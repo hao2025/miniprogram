@@ -1,0 +1,20 @@
+<!--pages/integral/integral.wxml-->
+<view>
+  <view class="itemView">
+      <input class="input" name="userName" placeholder="请输入顾客账号"
+      bindinput ="userNameInput"/>
+  </view>
+  <view class="itemView">
+      <input class="input" name="counter" placeholder="请输入积分"
+      bindinput ="counterInput"/>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="loginBtn" bindtap="searchCounter" style="background-color:blue">查询积分</button>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="loginBtn" bindtap="addCounter" style="background-color:green">添加积分</button>
+  </view>
+  <view class="viewName" style="background-color:white">
+    <button class="loginBtn" bindtap="delCounter" style="background-color:red">扣除积分</button>
+  </view>
+</view>

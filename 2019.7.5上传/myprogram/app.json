@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/choice/choice",
+    "pages/register/register",
+    "pages/mregister/mregister",
+    "pages/change/change",
+    "pages/login/login",
+    "pages/show/show",
+    "pages/showvip/showvip",
+    "pages/manage/manage",
+    "pages/integral/integral"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/show/show",
+        "text": "普通会员",
+        "iconPath": "photo/list.png",
+        "selectedIconPath": "photo/listact.png"
+      },
+      {
+        "pagePath": "pages/showvip/showvip",
+        "text": "vip会员",
+        "iconPath": "photo/vip.png",
+        "selectedIconPath": "photo/vipact.png"
+      },
+      {
+        "pagePath": "pages/integral/integral",
+        "text": "积分",
+        "iconPath": "photo/integ.png",
+        "selectedIconPath": "photo/integact.png"
+      },
+      {
+        "pagePath": "pages/manage/manage",
+        "text": "管理",
+        "iconPath": "photo/manager.png",
+        "selectedIconPath": "photo/manageract.png"
+      }
+    ]
+  }
+}
